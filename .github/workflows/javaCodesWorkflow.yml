@@ -17,6 +17,7 @@ jobs:
         run: java -cp JavaCodes PrintingHelloWorld
   
   runLifeTruth:
+    needs: runHelloWorld
     runs-on: windows-latest
     steps:
       - name: Download File onto Github Server
