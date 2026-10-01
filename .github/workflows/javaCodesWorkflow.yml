@@ -14,6 +14,6 @@ jobs:
       - name: Run The Hello World Function to Create Class File
         run: javac JavaCodes/PrintingHelloWorld.java
       - name: Run the .class File
-        run: java JavaCodes/PrintingHelloWorld.class
+        run: java -cp JavaCodes PrintingHelloWorld
         
     
