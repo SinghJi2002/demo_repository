@@ -1,0 +1,16 @@
+name: javaCodesWorkflow
+on: [workflow_dispatch, push]
+jobs:
+  runHelloWorld:
+    runs-on: windows-latest
+    steps:
+      - name: Download File onto Github Server
+        uses: actions/checkout@v6.1.0
+      - name: Setup Java On Github Server
+        uses: actions/setup-java@v6.0.1
+      - name: Run The Hello World Function to Create Class File
+        run: javac JavaCodes/PrintingHelloWorld.java
+      - name: Run the .class File
+        run: java JavaCodes/PrintingHelloWorld.class
+        
+    
