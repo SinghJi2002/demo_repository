@@ -1,0 +1,10 @@
+name: action1
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: windows-2022
+    steps:
+      - name: print-helloWorld
+        run: echo "Hello World"
+      - name: print-firstAction
+        run: echo "This is my first action"
